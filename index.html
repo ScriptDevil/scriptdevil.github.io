@@ -4,28 +4,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
   <style>
     body {
-      font-family: sans-serif;
-      margin: 0 auto;
-      width: 90%;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      line-height: 1.4;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 10px;
+      color: #363636;
+      background: #fff;
+      text-rendering: optimizeLegibility;
     }
 
-    @media(min-width: 600px) {
-      body {
-        margin: 0 auto;
-        width: 80%;
-      }
+    h1 {
+      font-size: 2.2em;
+      margin-top: 0
     }
 
-    @media(min-width: 1000px) {
-      body {
-        margin: 0 auto;
-        width: 70%;
-      }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b,
+    th {
+      margin-bottom: 12px;
+      font-weight: 600;
+      color: #000;
+    }
+
+    blockquote {
+      border-left: 4px solid rgba(0, 150, 191, .67);
+      margin: 1.5em 0;
+      padding: .5em 1em;
+      font-style: italic
+    }
+
+    blockquote>footer {
+      margin-top: 10px;
+      font-style: normal
+    }
+
+    address,
+    blockquote cite {
+      font-style: normal
+    }
+
+    a {
+      text-decoration: none;
+      color: #0076d1
+    }
+
+    a:hover {
+      text-decoration: underline
+    }
+
+    code,
+    kbd {
+      background: #efefef;
+      color: #000;
+      padding: 5px;
+      border-radius: 6px
+    }
+
+    pre>code {
+      padding: 10px;
+      display: block;
+      overflow-x: auto
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #dbdbdb
+    }
+
+    table {
+      border-collapse: collapse;
+      margin-bottom: 10px;
+      width: 100%
+    }
+
+    td,
+    th {
+      padding: 6px;
+      text-align: left
+    }
+
+    th {
+      border-bottom: 1px solid #dbdbdb
+    }
+
+    tbody tr:nth-child(2n) {
+      background-color: #efefef
     }
   </style>
+
   <title>Ashok Gautham Jadatharan's site</title>
 </head>
 
@@ -47,8 +122,6 @@
   </div>
 
   <div id="allposts">
-
-
     <div class="post" id="are-we-SPA-yet-18-july-2020">
       <h2>
         § <a href="#are-we-SPA-yet-18-july-2020">Are we SPA yet?</a>
@@ -87,21 +160,21 @@
 
       <p>
         So there goes! Welcome to this SPA. Every post lives here. I
-        have done by best not to cripple the site on purpose. I use sans-serif
-        font because it is better on the eyes, but I don't force you to use a
-        particular font. I have a maintain a <a href="#postlist">list of
+        have done by best not to cripple the site on purpose.
+        I maintain a <a href="#postlist">list of
           posts</a> at the top that you can use to navigate or jump to posts of
         your choice. I still have tags. Simply search for
-        <code>tag-NameOfTheTag</code>. Each post heading will still be
+        <kbd>tag-NameOfTheTag</kbd>. Each post heading will still be
         a link so that you can quickly copy a reference to the link if
         you want to.
       <p>
 
       <p>
-        Yes, it is an ugly beast. But it is my ugly beast! If you use a
-        text-mode browser like w3m or links, you shouldn't notice a difference.
-        If you really want to switch over fonts, background colors, width, or
-        even voice narration(!), I would strongly urge you to use <a
+        <strike>Yes, it is an ugly beast. But it is my ugly beast!</strike> I use a small amount of CSS
+        to make this site look palatable taken from <a href="https://watercss.kognise.dev">water.css</a>.
+        If you use a text-mode browser like w3m or links, you shouldn't notice a difference.
+        If you really want to switch fonts, background colors, width, or
+        even add voice narration(!), I would strongly urge you to use <a
           href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a> and its excellent <a
           href="https://support.mozilla.org/en-US/kb/firefox-reader-view-clutter-free-web-pages">Reader
           View</a> (which also works on your phone!)
@@ -112,7 +185,7 @@
         <a href="https://news.ycombinator.org">HN</a> or <a href="https://lobste.rs">Lobste.rs</a> might have a hard
         time
         since the only part of the URL that changes between posts is the
-        anchor (<code>https://scriptdevil.in/<u>#post-name</u></code>). But
+        anchor (<kbd>https://scriptdevil.in/<u>#post-name</u></kbd>). But
         then again, it isn't like I am making frontpage everyday. So who
         cares? There is also the problem of being indexed properly by search
         pages. Meh!
