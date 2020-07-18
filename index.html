@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    @media(min-width: 600px) {
+      body {
+        margin: 0 auto;
+        width: 80%;
+      }
+    }
+
+    @media(min-width: 1000px) {
+      body {
+        margin: 0 auto;
+        width: 70%;
+      }
+    }
+  </style>
+  <title>Ashok Gautham Jadatharan's site</title>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/">scriptdevil.github.io</a>
+    </h1>
+  </header>
+
+  <div id="postlist">
+    <h2>Posts</h2>
+    <ul>
+      <li>
+        <a href="#are-we-SPA-yet-18-july-2020">Are we SPA yet?</a>
+        <small>[posted on 18 July 2020] (<u>tag-satire</u>, <u>tag-blogging</u>)</small>
+      </li>
+    </ul>
+  </div>
+
+  <div id="allposts">
+
+
+    <div class="post" id="are-we-SPA-yet-18-july-2020">
+      <h2>
+        § <a href="#are-we-SPA-yet-18-july-2020">Are we SPA yet?</a>
+      </h2>
+      <small>[posted on 18 July 2020] (<u>tag-satire</u>, <u>tag-blogging</u>)</small>
+
+      <p>
+        I did a tiny experiment a few days back. I checked how much I
+        had accumulated in terms of notes over the past year and a bit.
+        Turns out I had written less than 8MB of text - and this
+        includes a lot of content that I had copy-pasted in.
+      </p>
+
+      <p>
+        Now, I thought of time I had wasted beautifying my previous
+        blog. The amount of time I wasted optimizing how the
+        output of my flavor-of-the-month static site generator/CSS
+        framework looked. And for what? I don't know a single
+        person other than me who read the blog. </p>
+
+      <p>
+        That got me thinking. Why did I use a static site generator in the
+        first place (other than the convenience of using markdown?). Turns out
+        I had to find some way of templating the stuff around the actual
+        articles I wrote. The bloat was a side-effect of me not having to focus
+        on everything that was being served but only the content I wrote. The
+        static assets on my previous attempt at a blog took over 4MB. I had
+        only written 300kB of actual content in that site.</p>
+
+      <p>
+        So the lightbulb went off, what if I didn't need to copy the template
+        over and over into each post I wrote? What if ... there was
+        only one page? Ooh! Aren't <a href="https://en.wikipedia.org/wiki/Single-page_application">SPA</a>s
+        all the rage?
+      </p>
+
+      <p>
+        So there goes! Welcome to this SPA. Every post lives here. I
+        have done by best not to cripple the site on purpose. I use sans-serif
+        font because it is better on the eyes, but I don't force you to use a
+        particular font. I have a maintain a <a href="#postlist">list of
+          posts</a> at the top that you can use to navigate or jump to posts of
+        your choice. I still have tags. Simply search for
+        <code>tag-NameOfTheTag</code>. Each post heading will still be
+        a link so that you can quickly copy a reference to the link if
+        you want to.
+      <p>
+
+      <p>
+        Yes, it is an ugly beast. But it is my ugly beast! If you use a
+        text-mode browser like w3m or links, you shouldn't notice a difference.
+        If you really want to switch over fonts, background colors, width, or
+        even voice narration(!), I would strongly urge you to use <a
+          href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a> and its excellent <a
+          href="https://support.mozilla.org/en-US/kb/firefox-reader-view-clutter-free-web-pages">Reader
+          View</a> (which also works on your phone!)
+      </p>
+
+      <p>
+        Aggregators like <a href="https://reddit.com">Reddit</a>,
+        <a href="https://news.ycombinator.org">HN</a> or <a href="https://lobste.rs">Lobste.rs</a> might have a hard
+        time
+        since the only part of the URL that changes between posts is the
+        anchor (<code>https://scriptdevil.in/<u>#post-name</u></code>). But
+        then again, it isn't like I am making frontpage everyday. So who
+        cares? There is also the problem of being indexed properly by search
+        pages. Meh!
+      </p>
+      <p>
+        Once you load this page. You get to read everything I have written here
+        offline! So, my genius has inadvertently added in another
+        <em>feature</em> - we are not just
+        an SPA, but also a <a href="https://en.wikipedia.org/wiki/Progressive_web_app">PWA</a>!
+        Beat that.
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
